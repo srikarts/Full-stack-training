@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: white;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container{
+    /* border: 5px groove black; */
+    background-color: bisque ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -2px 2px 6px 8px rgb(191, 216, 218);
+    border-radius: 12px;
+}
+
+#user{
+    font-size: 18px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 12px;
+}
+
+h2{
+    font-family: Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+    /* text-decoration: underline; */
+}
+
+#user #username{
+    padding: 12px;
+    border-radius: 8px;
+    font-family: monospace;
+    border: none;
+}
+
+#pwd{
+    font-size: 18px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 12px;
+}
+
+#pwd #password{
+    padding: 12px;
+    border-radius: 8px;
+    font-family: monospace;
+    border:none;
+}
+
+#username:focus{
+    outline: none;
+    box-shadow: -2px 8px 8px rgb(191, 216, 218);
+}
+#password:focus{
+    outline: none;
+    box-shadow: -2px 8px 8px rgb(191, 216, 218);
+}
+
+#chkbox{
+    padding-top:8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+#footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+#login{
+    padding: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    outline: none;
+    /* border:none; */
+    border: 0.5px solid black;
+    background-color: rgb(68, 144, 221);
+    font-weight: 600;
+    color: white;
+}
+
+#login:hover{
+    background-color: rgb(20, 93, 166);
+}
+
+
+
