@@ -1,0 +1,11 @@
+#header{
+    display: flex;
+    flex-direction: row;
+}
+
+marquee{
+    margin-left: 10px;
+    margin-top: 1px;
+    background-color: mediumaquamarine;
+    border-radius: 16px;
+}
