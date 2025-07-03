@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <script>
+        // function printTable(){
+        //     const number = Number(prompt("Enter any integer: "));
+        //     // create a multiplication table
+        //     for(let i =1;i<=10;i++){
+        //         const result = i*number;
+        //         document.write(`${number} * ${i} = ${result}`);
+        //         document.write("<br>")
+        //     }
+        // }
+        function pT(){
+            var num = Number(document.getElementById("txtNumber").value);
+            var i = 0;
+            for(i=0;i<=10;i++){
+                document.write(`${num} * ${i} = ${num*i}`);
+                document.write('<br>');
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>enter a number: <input id="txtNumber"></p>
+    <button onclick="pT()">Print the table</button>
+</body>
+</html>
