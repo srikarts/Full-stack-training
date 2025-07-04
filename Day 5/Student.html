@@ -1,0 +1,67 @@
+ <!-- student name, course, college name -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script src="studentscript.js"></script>
+    <title>Student details Form</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault();onFormSubmit();">              
+            <h2>Enter Student details</h2>
+            <div>
+              <label for="studentname">Name</label><br />
+              <input
+                type="text"
+                class="facName"
+                id="stuName"
+                placeholder="Enter the Student Name"
+              />
+            </div>
+            <div>
+              <label for="Course">Course</label><br />
+              <input
+                type="text"
+                class="facDep"
+                id="stuCourse"
+                placeholder="Enter the Course"
+              />
+            </div>
+            <div>
+              <label for="College">College name</label><br />
+              <input
+                type="text"
+                class="facSub"
+                id="clgName"
+                placeholder="Enter the college name"
+              />
+            </div>
+            <div>
+              <input type="submit" value="submit" />
+            </div>
+          </form>
+        </td>
+        <td>
+          <table
+            class="list"
+            id="stulist"
+            style="background-color: darkgoldenrod"
+          >
+            <thead>
+              <th>Name</th>
+              <th>Course</th>
+              <th>College name</th>
+              <th>Action</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

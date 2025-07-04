@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>
+        Feedback form
+    </title>
+    <link rel="stylesheet" type="text/css" href="feedback_styles.css">
+</head>
+
+<body>
+    
+
+    <form id="form">
+        <h1>Feedback Form</h1>
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Your Name:
+            </label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email:
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="Course" id="label-course">
+                Enter your current academic course:
+            </label>
+
+            <!-- Input Type Text -->
+            <select name="course" id="course">
+                <option value="MCA">MCA</option>
+                <option value="btech">B.Tech</option>
+                <option value="degree">Degree</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="tcourse" id="tcourse">
+                Name of the Training Course:
+            </label>
+
+            <select name="t_course" id="t_course">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <!-- <option value="other">Other</option> -->
+            </select>
+        </div>
+
+        <!-- Date of Training -->
+        <div class="form-control">
+            <label for="sdate" id="startdate">
+                Data of start of Training:
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="date" id="sdate" /> &nbsp; &nbsp;
+
+            <label for="edate" id="edate">
+                Data of end of Training:
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="date" id="edate" />
+        </div>
+
+        <div class="form-control">
+            <label>
+                Would you recommend Praveen Sir to a friend?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Rate your overall satisfaction
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Very Satisfied</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">Satisfied</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Neutral</input>
+            </label>
+            <label for="recommed-4">
+                <input type="radio" id="recommed-4" name="recommed">Dissatisfied</input>
+            </label>
+            <label for="recommed-5">
+                <input type="radio" id="recommed-5" name="recommed">Very Dissatisfied</input>
+            </label>
+        </div>
+
+
+        <div class="form-control">
+            <label for="likeliness">
+                Which part of the training did you like the most?
+            </label>
+            <textarea name="tpart" id="training-part"></textarea>
+        </div>
+
+        <div class="form-control">
+            <label for="suggestions">
+                What are the suggestions to improve?
+            </label>
+            <textarea name="spart" id="suggestions-part"></textarea>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Rate Trainer on knowledge of the Subject
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommedp">Highly proficient</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommedp">Proficient</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommedp">Moderate</input>
+            </label>
+            <label for="recommed-4">
+                <input type="radio" id="recommed-4" name="recommedp">Minimum knowledge</input>
+            </label>
+            <label for="recommed-5">
+                <input type="radio" id="recommed-5" name="recommedp">Need to learn more</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Angular</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Django</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Spring</input></label>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>

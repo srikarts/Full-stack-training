@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Styles</title>
+    <script>
+        function trigger(){
+            document.getElementById('id1').style.color = 'red';
+        }
+        function triggerback(){
+            // let val = document.getElementById('id1').innerHTML;
+            // let res = val.split(' ');
+            // res[0].style.color = 'green';
+            // res[1].style.color = 'blue';
+            // ans = ' '.join(res);
+            // document.getElementById('id1').innerHTML=ans;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="id1">Srikar's heading</h1>
+    <button type="button" onclick="trigger()">Click Here!</button>
+    <!-- <button type="button" onclick="triggerback()">Click Here to revert back!</button> -->
+</body>
+</html>
