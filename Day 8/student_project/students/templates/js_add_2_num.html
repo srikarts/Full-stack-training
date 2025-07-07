@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+    <script>
+        function add(){
+            var num1,num2,sum;
+            num1 = Number(document.getElementById('txtFirstNumber').value);
+            num2 = Number(document.getElementById('txtSecondNumber').value);
+            sum = num1+num2;
+            document.getElementById('txtAnswer').value = sum;
+        }
+        function sub(){
+            var num1,num2,res;
+            num1 = parseInt(document.getElementById('txtFirstNumber').value);
+            num2 = parseInt(document.getElementById('txtSecondNumber').value);
+            res = num1-num2;
+            document.getElementById('txtAnswer').value = res;
+        }
+        function division(){
+            var num1,num2,ans;
+            num1 = parseInt(document.getElementById('txtFirstNumber').value);
+            num2 = parseInt(document.getElementById('txtSecondNumber').value);
+            ans = num1/num2;
+            document.getElementById('txtAnswer').value = ans;
+        }
+        function clean(){
+            document.getElementById('txtFirstNumber').value = '';
+            document.getElementById('txtSecondNumber').value= '';
+            document.getElementById('txtAnswer').value = '';
+        }
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .btn{
+            display: flex;
+            flex-direction: row;
+        }
+        button{
+            margin: 8px 8px 8px 8px;
+        }
+        p{
+            margin: 20px 8px 20px 8px;
+        }
+        .main{
+            background-color: aqua;
+            padding: 24px;
+            border: 8px inset green;
+            box-shadow: 8px 8px 8px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>JavaScript operations</h1>
+        <p>First number: <input id="txtFirstNumber"></p>
+        <p>Second number: <input id="txtSecondNumber"></p>
+        <div class="btn">
+            <button onclick="add()">Add numbers</button>
+            <button onclick="sub()">Subtract numbers</button>
+            <button onclick="division()">Divide two numbers</button>
+            <button onclick="clean()">Clear</button>
+        </div>
+        <p>Sum: <input id="txtAnswer"></p>
+    </div>
+</body>
+</html>
