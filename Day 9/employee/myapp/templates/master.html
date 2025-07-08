@@ -1,0 +1,89 @@
+{% load static %}
+<!-- <p>Author:Srikar T S</p>
+</body>
+</html> -->
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="{% static 'css/college_styles.css' %}">
+</head>
+
+<body>
+	<nav>
+        <img src='{% static "img/logo.png" %}' alt="College logo">
+        <ul>
+            <li><a href="#">Mother Theresa Institute of Computer Applications, Palamaner</a></li>
+        </ul>
+    </nav>
+	<div class="navbar">
+		<a href="{% url 'insert_employee' %}">Home</a>
+		<!--   <a href="#">Frames</a>    -->
+		<div class="dropdown">
+			<button class="dropbtn">Sem-1</button>
+			<div class="dropdown-content">
+				<a href="{% url 'first_101' %}">MCA-101-DMS</a>
+				<a href="{% url 'first_102' %}">MCA-102-OOP with Java</a>
+				<a href="{% url 'first_103' %}">MCA-103-Computer Organization</a>
+				<a href="{% url 'first_104' %}">MCA-104-Operating Systems</a>
+				<a href="{% url 'first_105' %}">MCA-105-AFM</a>
+				<a href="{% url 'firstp_101P' %}">MCA-106P-Software Lab-I</a>
+				<a href="{% url 'firstp_102P' %}">MCA-107P-Operating Systems</a>
+				<a href="{% url 'firstp_103P' %}">MCA-108P-OOP with Java</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Sem-2</button>
+			<div class="dropdown-content">
+				<a href="#">MCA-201-COOR</a>
+				<a href="#">MCA-202-DS with Java</a>
+				<a href="#">MCA-203-DCCN</a>
+				<a href="#">MCA-204-ADBMS</a>
+				<a href="#">MCA-205-E-Commerce</a>
+				<a href="#">MCA-206-Software Lab-II</a>
+				<a href="#">MCA-207-DS with Java</a>
+				<a href="#">MCA-208-ADBMS</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Sem-3</button>
+			<div class="dropdown-content">
+				<a href="#">MCA-301</a>
+				<a href="#">MCA-302</a>
+				<a href="#">MCA-303</a>
+				<a href="#">MCA-304</a>
+				<a href="#">MCA-305</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Sem-4</button>
+			<div class="dropdown-content">
+				<a href="#">MCA-401</a>
+				<a href="#">MCA-402</a>
+				<a href="#">MCA-403</a>
+				<a href="#">MCA-404</a>
+				<a href="#">MCA-405</a>
+			</div>
+		</div>
+
+		<div class="login">
+			<a href="{% url 'view_employee' %}">View Employee</a>
+		</div>
+
+	</div>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+<footer>
+    &copy; 
+    <p>Srikar TS, </p>
+    <p>2724172, 
+    <a href="mailto:srikarsri52@gmail.com">srikarsri52@gmail.com</a>
+</footer>
+
+</html>
