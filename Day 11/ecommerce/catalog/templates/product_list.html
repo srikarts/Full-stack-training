@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mother Theresa</title>
+    <style>
+        body {
+            margin:0;
+            background-color: antiquewhite;
+        }
+        img {
+            max-width: 120px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        body h1{
+            margin-top: 0;
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            justify-content: center;
+            height: 80px;
+            background-color: aqua;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mother Theresa E-Commerce application</h1>
+    <div class="product-grid">
+        {% for product in products %}
+            <div class="product">
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% endif %}
+                <h2><a href="{% url 'product_detail' product.pk %}">{{ product.name }}</a></h2>
+                <p>₹{{ product.price }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
